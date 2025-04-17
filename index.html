@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolia - INFOSYS COMPANY </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    #home {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh9Iy_de_Dn0Vuds-XqP9UNJiT8_4IFc8rfQ&s');
+    }
+
+    #education {
+      background-image: url('https://www.shutterstock.com/image-photo/banner-frame-made-rose-flowers-260nw-2120722790.jpg');
+    }
+
+    #skills {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/011/908/855/non_2x/customers-rate-service-on-basis-of-excellent-satisfaction-and-best-positive-ratings-experience-and-opinion-survey-ideas-and-customer-engagement-focuses-on-marketing-results-and-building-credibility-free-photo.jpg');
+    }
+
+    #projects {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq0wrrVRUpZStaw_eE_n8HcDEb1f7OQW2wvA&s');
+    }
+
+    #experience {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuJSRjF_HOE60xZQe3qRe_ZPRDXqlpmEofg&s');
+    }
+
+    #contact {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsd0GtryjoTVrXx2DlUb4O7onSjrrTTcQSQw&s');
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">INFONSYS COMPANY</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#education">About</a>
+      <a href="#skills">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-content">
+      <h1>Welcome to INFONSYS company</h1>
+      <p>Innovating Tomorrow, Today</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-content">
+      <h2>About Us</h2>
+      <p> Infosys is a global consulting and IT services company founded in 1981, headquartered in Bangalore, India.
+
+	  It's a publicly listed company on the NYSE and has grown to a US$18.6 billion company with over 317,000 employees.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>INFONSYS Application Development and Maintenance</li>
+        <li>INFONSYS Consulting Services</li>
+        <li>INFONSYS Cloud and Infrastructure Services</li>
+        <li>INFONSYS Business Process Outsourcing (BPO)</li>
+        <li>INFONSYS Digital Solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Our Projects</h2>
+      <ul>
+        <li>Finance</li> 
+		<li>Engineering, Procurement, and Construction (EPC):</li>
+		<li>Public Sector</li> 
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-content">
+      <h2>Our Clients</h2>
+      <ul>
+        <li>financial institutions like Bank of America and ICICI Bank </li>
+        <li>pharmaceutical organizations like Novartis </li>
+        <li>and technology companies like Mercedes-Benz</li>
+        <li>Tesla, and Nike</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><strong>Phone:</strong> +91 9373676373</li>
+        <li><strong>Email:</strong> contact@INFONSYS.com</li>
+        <li><strong>Address:</strong> Pune, Maharashtra, India</li>
+      </ul>
+      <p>We’re always open to innovative ideas and collaboration. Let's build something amazing together.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 INFONSYS  company. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
